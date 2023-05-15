@@ -146,7 +146,7 @@ void merge_video_and_captions(char * captionsURL, char * folder_path, char * tit
 
 void arrays_to_video(json_Arrays_t data, char * output_path, char * subtitles_folder) {
     // We now need to use ffmpeg for each video url 
-    for (int i = 0; i < 1; i++) {
+    for (int i = 0; i < data.size; i++) {
         char *url = data.videoURL[i];
 
         // We need to create the new output file path 
