@@ -1,2 +1,2 @@
-gcc -o bin/cjv src/cjv.c
-clear
+rm bin/cjv
+gcc src/cjv.c -o bin/cjv -ljansson
